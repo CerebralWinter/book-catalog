@@ -1,0 +1,32 @@
+-- Schema for book-catalog database (extended for intelligent automation)
+
+CREATE TABLE IF NOT EXISTS books (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    author TEXT,
+    isbn TEXT,
+    publisher TEXT,
+    year TEXT,
+    edition TEXT,
+    language TEXT,
+    page_count INTEGER,
+    format TEXT,
+    summary TEXT,
+    category TEXT,
+    keywords TEXT,
+    price_median REAL,
+    price_min REAL,
+    condition TEXT,
+    availability TEXT,
+    cover_url TEXT,
+    source TEXT,
+    validation_status TEXT,
+    ai_category TEXT,
+    ai_target_audience TEXT,
+    ai_price_estimate REAL,
+    ai_rarity_score TEXT,
+    ai_marketability TEXT,
+    ai_model_used TEXT,
+    user_feedback TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
